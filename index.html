@@ -19,6 +19,8 @@
       <a class="button button-showy" href="#contact">SEND MESSAGE</a>
     </div>
   </header>
+
+<!--ABOUT-->
   <section class="about" id="about">
     <h2 class="heading">ABOUT ME</h2>
     <p class="about-text">
@@ -29,7 +31,31 @@
       このサイトでは、今まで私がクラスなどで作ってきたプロジェクトをポートフォリオサイトとして紹介しています。
       私のことを少しでも知っていただければ幸いです。
   </section>
+
+<!--WORK-->
   <section class="works">
+    <input type="checkbox" class="hide" id="p1">
+    <input type="checkbox" class="hide" id="p2">
+    <label for="p1" class="button">Click me</label>
+    <label for="p2" class="button">Click me too</label>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Info box</h2>
+        <label for="p1" class="close">&times;</label>
+        <div class="content">
+          <p>This is done totally without JavaScript. Just HTML and CSS.</p>
+        </div>
+      </div>
+    </div>
+    <div id="popup2" class="overlay light">
+      <label for="p2" class="cancel"></label>
+      <div class="popup">
+        <h2>What the what?</h2>
+        <div class="content">
+          <p>Click outside the popup to close.</p>
+        </div>
+      </div>
+    </div>
     <h2 class="heading">WORKS</h2>
     <div class="works-wrapper">
       <div class="work-box tree">
@@ -39,7 +65,18 @@
             <p class="work-text">
               Project 1<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <lable for="p2" class="button ">READ MORE</lable>
+              <input type="checkbox" class="hide" id="p2">
+              <!--<lable for="p2" class="button">READ MORE</label>-->
+                <div id="popup2" class="overlay light">
+                  <label for="p2" class="cancel"></label>
+                  <div class="popup">
+                    <h2>What the what?</h2>
+                    <div class="content">
+                      <p>Click outside the popup to close.</p>
+                    </div>
+                  </div>
+                </div>
             </p>
           </div>
         </div>
@@ -51,7 +88,7 @@
             <p class="work-text">
               Project 2<br>
               開発環境：Visual Studio, ASP.NET, C# <br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <a href="#popup2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -63,7 +100,7 @@
             <p class="work-text">
               Project 3<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <a href="#popup2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -75,7 +112,7 @@
             <p class="work-text">
               Project 4<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <a href="#popup2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -89,7 +126,7 @@
             <p class="work-text">
               Project 5<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <a href="#popup2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -101,7 +138,7 @@
             <p class="work-text">
               Project 6<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <a href="#popup2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -113,7 +150,7 @@
             <p class="work-text">
               Project 7<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <a href="#popup2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
@@ -125,15 +162,15 @@
             <p class="work-text">
               Project 8<br>
               開発環境：Visual Studio, ASP.NET, C#<br>
-              <a href="#" class="button button-ghost">READ MORE</a>
+              <a href="#popup2" class="button button-ghost">READ MORE</a>
             </p>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
+<!--SKILLS-->
   <section class="skills">
     <h2 class="heading">MY SKILLS</h2>
     <div class="skills-wrapper">
@@ -166,6 +203,8 @@
       </div>
     </div>
   </section>
+
+<!--CONTACT-->
   <section class="contact" id="contact">
     <h2 class="heading">CONTACT</h2>
     <form class="contact-form">
@@ -174,32 +213,38 @@
       <input type="submit" value="SEND">
     </form>
   </section>
+
+
+<!--POPUP TEST-->
+<!--
   <section>
   <input type="checkbox" class="hide" id="p1">
   <input type="checkbox" class="hide" id="p2">
-  <label for="p1" class="buttonTest">Click me</label>
-  <label for="p2" class="buttonTest">Click me too</label>
-  <div id="popup1" class="overlayTest">
-    <div class="popupTest">
+  <label for="p1" class="button">Click me</label>
+  <label for="p2" class="button">Click me too</label>
+  <div id="popup1" class="overlay">
+    <div class="popup">
       <h2>Info box</h2>
       <label for="p1" class="close">&times;</label>
-      <div class="contentTest">
+      <div class="content">
         <p>This is done totally without JavaScript. Just HTML and CSS.</p>
       </div>
     </div>
   </div>
-  <div id="popup2" class="overlayTest lightTest">
+  <div id="popup2" class="overlay light">
     <label for="p2" class="cancel"></label>
-    <div class="popupTest">
+    <div class="popup">
       <h2>What the what?</h2>
-      <div class="contentTest">
+      <div class="content">
         <p>Click outside the popup to close.</p>
       </div>
     </div>
   </div>
 </section>
+-->
+
   <footer class="footer">
-      © yoshitakameg
+      © yoshmello
   </footer>
   <!--<script src="placeholders.min.js"></script>-->
 
