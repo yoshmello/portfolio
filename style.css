@@ -239,10 +239,10 @@ body {
 /* --------------------------------
  * test
  * -------------------------------- */
- .hide {
+/*.hide {
   display: none;
 }
-
+*/
 /*.button {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -301,14 +301,46 @@ body {
   opacity: 1;
 }
 
+#p3:checked ~ #popup3.overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+#p4:checked ~ #popup4.overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+#p5:checked ~ #popup5.overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+#p6:checked ~ #popup6.overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+#p7:checked ~ #popup7.overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+#p8:checked ~ #popup8.overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
 .popup {
   margin: 75px auto;
   padding: 20px;
   background: #fff;
   border: 1px solid #666;
-  width: 300px;
+  width: 800px;
+  height: 500px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: relative;
+  overflow-y: scroll;
 }
 .light .popup {
   border-color: #aaa;
@@ -319,6 +351,7 @@ body {
   color: #666;
   font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
 }
+/*
 .popup .close {
   position: absolute;
   width: 20px;
@@ -336,6 +369,7 @@ body {
 .popup .close:hover {
   opacity: 1;
 }
+*/
 .popup .content {
   max-height: 400px;
   overflow: auto;
