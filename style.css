@@ -31,7 +31,6 @@ body {
   font-size: 4rem;
 }
 
-
 .heading::before,
 .heading::after {
   content: '';
@@ -65,10 +64,6 @@ body {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
 }
-
-
-
-
 
 
 /* --------------------------------
@@ -136,6 +131,7 @@ body {
 .work-box {
   position: relative;
   display: table-cell;
+  overflow: hidden;
 }
 .work-box img {
   transition: -webkit-transform 0.5s ease-in-out;
@@ -208,8 +204,11 @@ body {
 .work-box.address_lookup::after {
   background-image: url('address_lookup.jpg');
 }
-.work-box.sky::after {
-  background-image: url('address_lookup.jpg');
+.work-box.entity_framework::after {
+  background-image: url('entity_framework.jpg');
+}
+.work-box.tic_tac_toe::after {
+  background-image: url('tic_tac_toe.jpg');
 }
 .work-box:nth-child(odd) .work-image {
   margin: 60% 0 0;
@@ -257,7 +256,7 @@ body {
 }
 
 /* --------------------------------
- * test
+ * popup
  * -------------------------------- */
 .hide {
   display: none;
@@ -286,7 +285,6 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
 }
 */
-
 
 .overlay {
   position: absolute;
@@ -543,45 +541,3 @@ body {
     width: 80%;
   }
 }
-
-
-/* --------------------------------
- * challenge
- *
- * 31行目からの.heading::before, .heading::afterの
- * スタイルをコメントアウトしてから適用してください。
- * -------------------------------- */
-/*
-.heading::before,
-.heading::after {
-  content: '';
-  display: inline-block;
-  width: 0.3em;
-  height: 0.3em;
-  margin: 0 0.5em;
-  border: 1px solid;
-  vertical-align: 0.2em;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.work-box {
-  overflow: hidden;
-}
-.work-image {
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-}
-.work-box:nth-child(odd) .work-image {
-  -webkit-transform-origin: top center;
-  transform-origin: top center;
-}
-.work-box:nth-child(even) .work-image {
-  -webkit-transform-origin: bottom center;
-  transform-origin: bottom center;
-}
-.work-box:hover .work-image {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-*/
