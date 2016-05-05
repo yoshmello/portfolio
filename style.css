@@ -113,7 +113,13 @@ body {
   margin: 30px 0;
   line-height: 2.5;
 }
-
+table {
+  margin:auto;
+}
+td {
+  vertical-align: top;
+  text-align: left;
+}
 
 /* --------------------------------
  * works
@@ -288,8 +294,8 @@ body {
 
 .overlay {
   position: absolute;
-  top: 1060px;
-  bottom: -1610px;
+  top: 1520px;
+  bottom: -1920px;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);

@@ -10,11 +10,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="en.html">EN</a>
+  <br>
+  <br>
+    <a href="en.html" style="text-decoration:none; float:right; color:white; margin-right:60px; margin-botton:100px">ENGLISH</a>
   <header class="header">
-    <p class="site-title-sub">Web designer's portfolio</p>
-    <h1 class="site-title">HI, MY NAME IS YOSHI.</h1>
-    <p class="site-description">Check out some of my works.</p>
+    <p class="site-title-sub">フロリダ在住大学生のポートフォリオ</p>
+    <h1 class="site-title">YOSHIと呼んでくださると嬉しいですはい。</h1>
+    <p class="site-description">contact form is not workingです。誰かPHP教えてください。</p>
     <div class="buttons">
       <a class="button" href="#about">LEARN MORE</a>
       <a class="button button-showy" href="#contact">SEND MESSAGE</a>
@@ -25,36 +27,71 @@
   <section class="about" id="about">
     <h2 class="heading">ABOUT ME</h2>
     <p class="about-text">
-      はじめまして。アメリカのUniversity of South FloridaでComputer Scienceを勉強しています。<br>
+      はじめまして。アメリカのUniversity of South FloridaでComputer Scienceを勉強しているYOSHIと申します。<br>
       現在4年生で、2016年12月卒業予定です。
     </p>
     <p class="about-text">
       このサイトでは、今まで私がクラスなどで作ってきたプロジェクトをポートフォリオサイトとして紹介しています。<br>
       私のことを少しでも知っていただければ幸いです。
+    </p>
+    <p class="about-text">
+      <table>
+        <tr>
+          <td>略歴</td>
+          <td></td>
+        <tr>
+          <td>2010年: </td>
+          <td>とんねるずの番組で有名になった修徳三本締めの東京都修徳高等学校卒業。<br>
+              ちなみに私もサッカー部でした。</td>
+        </tr>
+        <tr>
+          <td>2011年: </td>
+          <td>ヒューマン国際大学機構という留学準備機関的なところに入学。<br>
+              １年間英語勉強に励む。<br>
+              ちなみにこの学校にいる時にコンピューターサイエンスに興味を持ちました。</td>
+        </tr>
+        <tr>
+          <td>2012年: </td>
+          <td>アメリカフロリダ州のUniverisy of South Florda入学。<br>
+              Computer Science専攻。<br>
+              ちなみにアメリカに着いた日は私の誕生日でした。知り合い誰もいませんでした。</td>
+        </tr>
+        <tr>
+          <td>2016年: </td>
+          <td>University of South Florida卒業予定。<br>
+              ちなみにアメリカに来てから４年間一度も日本に帰ることはありませんでした。</td>
+        </tr>
+      </table>
+    </p>
   </section>
 
 <!--WORK-->
   <section class="work" id="work">
     <br><br><br><br>
 
+    <h2 class="heading">WORKS</h2>
     <input type="checkbox" class="hide" id="p1">
     <input type="checkbox" class="hide" id="p2">
-    <h2 class="heading">WORKS</h2>
     <input type="checkbox" class="hide" id="p3">
     <input type="checkbox" class="hide" id="p4">
+    <input type="checkbox" class="hide" id="p5">
+    <input type="checkbox" class="hide" id="p6">
+    <input type="checkbox" class="hide" id="p7">
+    <input type="checkbox" class="hide" id="p8">
     <br><br><br><br><br>
 
     <div id="popup1" class="overlay light">
       <label for="p1" class="cancel"></label>
       <div class="popup">
-        <h2>What the what?</h2>
+        <h2>Temperature Conversion</h2>
         <div class="content">
-          <p>Click outside the popup to close.<br>yala<br>
-        habibi<br>Description for Project 1 madafaka<dr>
-          温度変換のウェブアプリを作成しました。<br>
-          カ氏温度からセ氏温度、または その逆に温度を変換することができます。<br>
-          温度を変換した後はテキストボックスに数字入力できないようになっていて、Clearボタンを押すとボックス内の文字を消して、また新しい数字を入力することができます。<br>
-          また、もし数字以外の文字を入力して変換ボタンを押すとエラメッセージが表示されるようになっています。<br></p>
+          <p>開発環境: Visual Studio, ASP.NET, HTML, CSS, C#</p>
+
+          <p>
+            温度変換のウェブアプリを作成しました。<br>
+            カ氏温度からセ氏温度、または その逆に温度を変換することができます。<br>
+            温度を変換した後はテキストボックスに数字入力できないようになっていて、Clearボタンを押すとボックス内の文字を消して、また新しい数字を入力することができます。<br>
+            また、もし数字以外の文字を入力して変換ボタンを押すとエラメッセージが表示されるようになっています。<br></p>
         </div>
       </div>
     </div>
@@ -150,10 +187,6 @@
       </div>
     </div>
 
-    <input type="checkbox" class="hide" id="p5">
-    <input type="checkbox" class="hide" id="p6">
-    <input type="checkbox" class="hide" id="p7">
-    <input type="checkbox" class="hide" id="p8">
     <div id="popup5" class="overlay light">
       <label for="p5" class="cancel"></label>
       <div class="popup">
@@ -283,7 +316,7 @@
         <div class="skill-title">DEV ENVIRONMENT</div>
         <p class="skill-text">
           Windows, Mac OS, Linux/Unix Platform<br>
-          Visual Studio, Xcode, Eclipse, Atom, Vim, Nano, VMware, GitHub<br>
+          Vim, Atom, Visual Studio, Xcode, Eclipse, Nano, VMware, GitHub<br>
           以上のOS、その他開発環境の経験があります。
         </p>
       </div>
@@ -299,43 +332,16 @@
       <input type="text" name="email" placeholder="EMAIL">
       <textarea name="message" placeholder="MESSAGE"></textarea>
       <input type="submit" value="SEND">
-      <?php echo $result;>
+      <p> 申し訳ないのですが、このContactフォームdoesn't wanna workなので</p>
+      <a href="mailto:yoshmello@gmail.com?Subject=YOSHIに物申す！">yoshmello@gmail.com<a/></p>
+      <p> に連絡を頂けると幸いです。</p>
+      <p> Once again, 誰かPHP教えてください。</p>
     </form>
   </section>
-
-
-<!--POPUP TEST-->
-<!--
-  <section>
-  <input type="checkbox" class="hide" id="p1">
-  <input type="checkbox" class="hide" id="p2">
-  <label for="p1" class="button">Click me</label>
-  <label for="p2" class="button">Click me too</label>
-  <div id="popup1" class="overlay">
-    <div class="popup">
-      <h2>Info box</h2>
-      <label for="p1" class="close">&times;</label>
-      <div class="content">
-        <p>This is done totally without JavaScript. Just HTML and CSS.</p>
-      </div>
-    </div>
-  </div>
-  <div id="popup2" class="overlay light">
-    <label for="p2" class="cancel"></label>
-    <div class="popup">
-      <h2>What the what?</h2>
-      <div class="content">
-        <p>Click outside the popup to close.</p>
-      </div>
-    </div>
-  </div>
-</section>
--->
 
   <footer class="footer">
       © <a href="https://github.com/yoshmello" target="_blank">yoshmello</a>
   </footer>
-  <!--<script src="placeholders.min.js"></script>-->
 
 </body>
 </html>
