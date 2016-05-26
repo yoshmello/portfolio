@@ -201,11 +201,11 @@ td {
   opacity: 0.2;
   transform: scaleY(-1);
 }
-.work-box.temperature_conversion::after {
-  background-image: url('temperature_conversion.jpg');
+.work-box.vending_machine::after {
+  background-image: url('VM screenshots/VM12.jpg');
 }
-.work-box.chomp_game::after {
-  background-image: url('chomp_game.jpg');
+.work-box.tic_tac_toe_cpp::after {
+  background-image: url('OX_screenshots/TicTacToe10.png');
 }
 .work-box.address_lookup::after {
   background-image: url('address_lookup.jpg');
@@ -361,7 +361,7 @@ td {
   background: #fff;
   border: 1px solid #666;
   width: 800px;
-  height: 500px;
+  height: 600px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow-y: scroll;
@@ -395,7 +395,7 @@ td {
 }
 */
 .popup .content {
-  max-height: 400px;
+  max-height: 500px;
   overflow: auto;
   color: #666;
 }
